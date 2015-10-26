@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8EA5A5"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_fragment1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="第一个Frag" />
+
+        <Button
+            android:id="@+id/btn_fragment2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="第二个Frag" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fram_layout"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/linearLayout"
+        android:background="#1581EA"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
